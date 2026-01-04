@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acesso Restrito - Madeira Tours</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/navigation.css">
+    <link rel="stylesheet" href="styles/login.css">
+    <meta http-equiv="refresh" content="3;url=login.html">
+</head>
+<body>
+    <input type="checkbox" id="theme-toggle" style="display: none;">
+    <header class="header">
+        <div class="header-container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="assets/logo.png" alt="Madeira Tours" width="120" height="40">
+                </a>
+            </div>
+            <div class="theme-toggle-container">
+                <label for="theme-toggle" class="theme-toggle-label" aria-label="Alternar tema"></label>
+            </div>
+            <input type="checkbox" id="menu-toggle" class="menu-checkbox" aria-label="Menu">
+            <label for="menu-toggle" class="menu-toggle" aria-label="Menu">☰</label>
+            <nav class="nav" role="navigation" aria-label="Menu principal">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Início</a></li>
+                    <li class="nav-item has-submenu">
+                        <a href="#" class="nav-link">Geral</a>
+                        <ul class="submenu">
+                            <li class="submenu-item"><a href="preferencias.html" class="submenu-link">Preferências</a></li>
+                            <li class="submenu-item"><a href="dados-pessoais-login.html" class="submenu-link">Dados Pessoais</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item has-submenu"><a href="lugares.html" class="nav-link">Lugares para Ver</a></li>
+                    <li class="nav-item"><a href="login.html" class="nav-link">Login</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main login-main">
+        <div class="login-container">
+            <div class="login-card">
+                <h1>Acesso Restrito</h1>
+                <p style="text-align: center; color: var(--text-secondary); margin: 1.5rem 0;">
+                    Para aceder aos seus dados pessoais, precisa de fazer login.
+                </p>
+                <p style="text-align: center; color: var(--text-secondary); margin-bottom: 2rem; font-size: 0.9rem;">
+                    Será redirecionado automaticamente em 3 segundos...
+                </p>
+                <a href="login.html" class="btn-login" style="text-decoration: none; display: block; text-align: center;">
+                    Ir para Login
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <footer class="page-footer">
+        Feito por Sérgio Silva
+    </footer>
+</body>
+</html>
+

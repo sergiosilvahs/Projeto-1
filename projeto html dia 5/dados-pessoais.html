@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dados Pessoais - Madeira Tours</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/navigation.css">
+    <link rel="stylesheet" href="styles/dados-pessoais.css">
+</head>
+<body>
+    <input type="checkbox" id="theme-toggle" style="display: none;">
+    <header class="header">
+        <div class="header-container">
+            <div class="logo">
+                <a href="index.html" style="display: flex; align-items: center; gap: 0.75rem; text-decoration: none;">
+                    <img src="assets/bandeira-madeira.svg" alt="Bandeira da Madeira" width="40" height="27" style="display: block;">
+                    <div style="color: var(--text-primary); font-weight: 600;">
+                        <div>Madeira</div>
+                        <div style="font-size: 0.85em; opacity: 0.9;">Tours</div>
+                    </div>
+                </a>
+            </div>
+            <div class="theme-toggle-container">
+                <label for="theme-toggle" class="theme-toggle-label" aria-label="Alternar tema"></label>
+            </div>
+            <input type="checkbox" id="menu-toggle" class="menu-checkbox" aria-label="Menu">
+            <label for="menu-toggle" class="menu-toggle" aria-label="Menu">☰</label>
+            <nav class="nav" role="navigation" aria-label="Menu principal">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Início</a></li>
+                    <li class="nav-item has-submenu">
+                        <a href="#" class="nav-link active">Geral</a>
+                        <ul class="submenu">
+                            <li class="submenu-item"><a href="preferencias.html" class="submenu-link">Preferências</a></li>
+                            <li class="submenu-item"><a href="dados-pessoais-login.html" class="submenu-link active">Dados Pessoais</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item has-submenu"><a href="lugares.html" class="nav-link">Lugares para Ver</a></li>
+                    <li class="nav-item"><a href="login.html" class="nav-link">Login</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main dados-main">
+        <div class="dados-container">
+            <div class="login-check" style="display: none;">
+            </div>
+            
+            <h1>Dados Pessoais</h1>
+            
+            <div class="login-required" style="display: none;">
+                <div class="login-card" style="max-width: 100%; margin-bottom: 2rem;">
+                    <h2 style="color: var(--accent); margin-bottom: 1rem;">Acesso Restrito</h2>
+                    <p style="color: var(--text-secondary); margin-bottom: 1.5rem;">
+                        Para aceder aos seus dados pessoais, precisa de fazer login.
+                    </p>
+                    <a href="login.html" class="btn-login" style="text-decoration: none; display: inline-block;">
+                        Ir para Login
+                    </a>
+                </div>
+            </div>
+
+            <div class="dados-content">
+            <section class="dados-section">
+                <div class="section-header">
+                    <h2>Informação Biográfica</h2>
+                    <button class="btn-edit">Editar</button>
+                </div>
+                <div class="dados-grid">
+                    <div class="dados-item">
+                        <span class="dados-label">Nome Completo</span>
+                        <span class="dados-value">Sérgio Afonso Henriques Silva</span>
+                    </div>
+                    <div class="dados-item">
+                        <span class="dados-label">Data de Nascimento</span>
+                        <span class="dados-value">15-03-1990</span>
+                    </div>
+                    <div class="dados-item">
+                        <span class="dados-label">Nacionalidade</span>
+                        <span class="dados-value">Portuguesa</span>
+                    </div>
+                    <div class="dados-item">
+                        <span class="dados-label">Género</span>
+                        <span class="dados-value">Masculino</span>
+                    </div>
+                </div>
+            </section>
+
+            <section class="dados-section">
+                <div class="section-header">
+                    <h2>Morada</h2>
+                    <button class="btn-edit">Editar</button>
+                </div>
+                <div class="dados-grid">
+                    <div class="dados-item">
+                        <span class="dados-label">Rua</span>
+                        <span class="dados-value">Rua da Madeira, 123</span>
+                    </div>
+                    <div class="dados-item">
+                        <span class="dados-label">Código Postal</span>
+                        <span class="dados-value">9000-123</span>
+                    </div>
+                    <div class="dados-item">
+                        <span class="dados-label">Localidade</span>
+                        <span class="dados-value">Funchal</span>
+                    </div>
+                    <div class="dados-item">
+                        <span class="dados-label">País</span>
+                        <span class="dados-value">Portugal</span>
+                    </div>
+                </div>
+            </section>
+
+            <section class="dados-section">
+                <div class="section-header">
+                    <h2>Documentos de Identificação</h2>
+                    <button class="btn-edit">Editar</button>
+                </div>
+                <div class="dados-grid">
+                    <div class="dados-item">
+                        <span class="dados-label">Tipo de Documento</span>
+                        <span class="dados-value">Cartão de Cidadão</span>
+                    </div>
+                    <div class="dados-item">
+                        <span class="dados-label">Número</span>
+                        <span class="dados-value">12345678 1ZX5</span>
+                    </div>
+                    <div class="dados-item">
+                        <span class="dados-label">Data de Emissão</span>
+                        <span class="dados-value">10-05-2015</span>
+                    </div>
+                    <div class="dados-item">
+                        <span class="dados-label">Data de Validade</span>
+                        <span class="dados-value">10-05-2025</span>
+                    </div>
+                    <div class="dados-item">
+                        <span class="dados-label">Local de Emissão</span>
+                        <span class="dados-value">Funchal</span>
+                    </div>
+                </div>
+            </section>
+
+            <section class="dados-section">
+                <div class="section-header">
+                    <h2>Contactos</h2>
+                    <button class="btn-edit">Editar</button>
+                </div>
+                <div class="dados-grid">
+                    <div class="dados-item">
+                        <span class="dados-label">Email</span>
+                        <span class="dados-value">sergioafonsohs@gmail.com</span>
+                    </div>
+                    <div class="dados-item">
+                        <span class="dados-label">Telefone</span>
+                        <span class="dados-value">+351 291 209 400</span>
+                    </div>
+                    <div class="dados-item">
+                        <span class="dados-label">Telemóvel</span>
+                        <span class="dados-value">+351 933 366 700</span>
+                    </div>
+                </div>
+            </section>
+            </div>
+        </div>
+    </main>
+
+    <footer class="page-footer">
+        Feito por Sérgio Silva
+    </footer>
+</body>
+</html>
+

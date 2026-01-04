@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Costa Sul - Madeira Tours</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/navigation.css">
+    <link rel="stylesheet" href="styles/lugares.css">
+</head>
+<body>
+    <input type="checkbox" id="theme-toggle" style="display: none;">
+    <header class="header">
+        <div class="header-container">
+            <div class="logo">
+                <a href="index.html" style="display: flex; align-items: center; gap: 0.75rem; text-decoration: none;">
+                    <img src="assets/bandeira-madeira.svg" alt="Bandeira da Madeira" width="40" height="27" style="display: block;">
+                    <div style="color: var(--text-primary); font-weight: 600;">
+                        <div>Madeira</div>
+                        <div style="font-size: 0.85em; opacity: 0.9;">Tours</div>
+                    </div>
+                </a>
+            </div>
+            <div class="theme-toggle-container">
+                <label for="theme-toggle" class="theme-toggle-label" aria-label="Alternar tema"></label>
+            </div>
+            <input type="checkbox" id="menu-toggle" class="menu-checkbox" aria-label="Menu">
+            <label for="menu-toggle" class="menu-toggle" aria-label="Menu">☰</label>
+            <nav class="nav" role="navigation" aria-label="Menu principal">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Início</a></li>
+                    <li class="nav-item has-submenu">
+                        <a href="#" class="nav-link">Geral</a>
+                        <ul class="submenu">
+                            <li class="submenu-item"><a href="preferencias.html" class="submenu-link">Preferências</a></li>
+                            <li class="submenu-item"><a href="dados-pessoais-login.html" class="submenu-link">Dados Pessoais</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item has-submenu">
+                        <a href="lugares.html" class="nav-link active">Lugares para Ver</a>
+                        <ul class="submenu">
+                            <li class="submenu-item"><a href="lugares.html#atracoes" class="submenu-link">Principais Atrações</a></li>
+                            <li class="submenu-item"><a href="costa-norte.html" class="submenu-link">Costa Norte</a></li>
+                            <li class="submenu-item"><a href="costa-sul.html" class="submenu-link active">Costa Sul</a></li>
+                            <li class="submenu-item"><a href="porto-santo.html" class="submenu-link">Porto Santo</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a href="login.html" class="nav-link">Login</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main lugares-main">
+        <section id="costa-sul" class="atracoes-section">
+            <h1>Costa Sul</h1>
+            
+            <div class="atracoes-grid">
+                <article class="atracao-card">
+                    <div class="atracao-image">
+                        <img src="assets/cabo.jpg" alt="Cabo Girão Skywalk" loading="lazy">
+                    </div>
+                    <div class="atracao-content">
+                        <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem;">
+                            <span style="font-size: 1.5rem;">🌊</span>
+                            <h3 style="margin: 0;">Cabo Girão (Skywalk)</h3>
+                        </div>
+                        <p>Um dos cabos mais altos da Europa, com uma plataforma de vidro suspensa sobre o mar. É uma das atrações mais visitadas da Madeira, com vistas impressionantes sobre Câmara de Lobos e o Funchal.</p>
+                        <div class="atracao-actions">
+                            <input type="checkbox" id="sul-reservar-1" class="reservar-toggle">
+                            <label for="sul-reservar-1" class="reservar-label"></label>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="atracao-card">
+                    <div class="atracao-image">
+                        <img src="assets/lido.jpg" alt="Zona do Lido" loading="lazy">
+                    </div>
+                    <div class="atracao-content">
+                        <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem;">
+                            <span style="font-size: 1.5rem;">🌴</span>
+                            <h3 style="margin: 0;">Zona do Lido (Funchal)</h3>
+                        </div>
+                        <p>Área altamente turística, com hotéis, piscinas naturais, bares, restaurantes e acesso direto ao mar. Muito procurada por turistas para passear, relaxar e ver o pôr do sol.</p>
+                        <div class="atracao-actions">
+                            <input type="checkbox" id="sul-reservar-2" class="reservar-toggle">
+                            <label for="sul-reservar-2" class="reservar-label"></label>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="atracao-card">
+                    <div class="atracao-image">
+                        <img src="assets/ponta.jpeg" alt="Ponta do Sol" loading="lazy">
+                    </div>
+                    <div class="atracao-content">
+                        <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem;">
+                            <span style="font-size: 1.5rem;">🏝️</span>
+                            <h3 style="margin: 0;">Ponta do Sol</h3>
+                        </div>
+                        <p>Uma vila solarenga e muito fotogénica, famosa pelo clima ameno, praia de calhau e centro histórico charmoso. Bastante procurada por turistas que gostam de tranquilidade com boa paisagem.</p>
+                        <div class="atracao-actions">
+                            <input type="checkbox" id="sul-reservar-3" class="reservar-toggle">
+                            <label for="sul-reservar-3" class="reservar-label"></label>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="page-footer">
+        Feito por Sérgio Silva
+    </footer>
+</body>
+</html>
+
