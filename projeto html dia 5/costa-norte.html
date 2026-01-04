@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Costa Norte - Madeira Tours</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/navigation.css">
+    <link rel="stylesheet" href="styles/lugares.css">
+</head>
+<body>
+    <input type="checkbox" id="theme-toggle" style="display: none;" aria-hidden="true">
+    <header class="header">
+        <div class="header-container">
+            <div class="logo">
+                <a href="index.html" style="display: flex; align-items: center; gap: 0.75rem; text-decoration: none;">
+                    <img src="assets/bandeira-madeira.svg" alt="Bandeira da Madeira" width="40" height="27" style="display: block;">
+                    <div style="color: var(--text-primary); font-weight: 600;">
+                        <div>Madeira</div>
+                        <div style="font-size: 0.85em; opacity: 0.9;">Tours</div>
+                    </div>
+                </a>
+            </div>
+            <div class="theme-toggle-container">
+                <label for="theme-toggle" class="theme-toggle-label" aria-label="Alternar tema"></label>
+            </div>
+            <input type="checkbox" id="menu-toggle" class="menu-checkbox" aria-label="Menu">
+            <label for="menu-toggle" class="menu-toggle" aria-label="Menu">☰</label>
+            <nav class="nav" role="navigation" aria-label="Menu principal">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Início</a></li>
+                    <li class="nav-item has-submenu">
+                        <a href="#" class="nav-link">Geral</a>
+                        <ul class="submenu">
+                            <li class="submenu-item"><a href="preferencias.html" class="submenu-link">Preferências</a></li>
+                            <li class="submenu-item"><a href="dados-pessoais-login.html" class="submenu-link">Dados Pessoais</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item has-submenu">
+                        <a href="lugares.html" class="nav-link active">Lugares para Ver</a>
+                        <ul class="submenu">
+                            <li class="submenu-item"><a href="lugares.html#atracoes" class="submenu-link">Principais Atrações</a></li>
+                            <li class="submenu-item"><a href="costa-norte.html" class="submenu-link active">Costa Norte</a></li>
+                            <li class="submenu-item"><a href="costa-sul.html" class="submenu-link">Costa Sul</a></li>
+                            <li class="submenu-item"><a href="porto-santo.html" class="submenu-link">Porto Santo</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a href="login.html" class="nav-link">Login</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main lugares-main">
+        <section id="costa-norte" class="atracoes-section">
+            <h1>Costa Norte</h1>
+            
+            <div class="atracoes-grid">
+                <article class="atracao-card">
+                    <div class="atracao-image">
+                        <img src="assets/porto.jpg" alt="Piscinas Naturais do Porto Moniz" loading="lazy">
+                    </div>
+                    <div class="atracao-content">
+                        <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem;">
+                            <span style="font-size: 1.5rem;">🌊</span>
+                            <h3 style="margin: 0;">Porto Moniz Natural Swimming Pools</h3>
+                        </div>
+                        <p>As piscinas naturais de Porto Moniz são uma das atrações mais icónicas da costa norte da Madeira — formações vulcânicas preenchidas pelo mar que criam "piscinas" perfeitas para nadar, relaxar e observar o oceano. Está no coração da vila de Porto Moniz e é imperdível num passeio pela costa.</p>
+                        <div class="atracao-actions">
+                            <input type="checkbox" id="norte-reservar-1" class="reservar-toggle">
+                            <label for="norte-reservar-1" class="reservar-label"></label>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="atracao-card">
+                    <div class="atracao-image">
+                        <img src="assets/santana.jpg" alt="Casas Típicas de Santana" loading="lazy">
+                    </div>
+                    <div class="atracao-content">
+                        <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem;">
+                            <span style="font-size: 1.5rem;">🏘️</span>
+                            <h3 style="margin: 0;">Casas Típicas de Santana</h3>
+                        </div>
+                        <p>No concelho de Santana encontrarás as casas típicas de colmo, com telhados de palha e arquitectura tradicional madeirense, um símbolo cultural desta região. É um ótimo lugar para conhecer um pouco da história local e tirar fotos únicas.</p>
+                        <div class="atracao-actions">
+                            <input type="checkbox" id="norte-reservar-2" class="reservar-toggle">
+                            <label for="norte-reservar-2" class="reservar-label"></label>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="atracao-card">
+                    <div class="atracao-image">
+                        <img src="assets/miradouro.jpg" alt="Miradouro de São Cristovão" loading="lazy">
+                    </div>
+                    <div class="atracao-content">
+                        <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem;">
+                            <span style="font-size: 1.5rem;">🌄</span>
+                            <h3 style="margin: 0;">Miradouro de São Cristovão</h3>
+                        </div>
+                        <p>Este miradouro espetacular na costa norte oferece vistas amplas sobre a costa e o oceano Atlântico — ideal para apreciar o pôr do sol, paisagens dramáticas e fotos panorâmicas. Os miradouros são uma grande parte da experiência natural da costa norte da Madeira.</p>
+                        <div class="atracao-actions">
+                            <input type="checkbox" id="norte-reservar-3" class="reservar-toggle">
+                            <label for="norte-reservar-3" class="reservar-label"></label>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="page-footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <div class="footer-logo">🏝️</div>
+                <h3 class="footer-brand-name">Madeira Tours</h3>
+            </div>
+            
+            <div class="footer-section">
+                <h4 class="footer-section-title">Navegação</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="lugares.html">Lugares para Ver</a></li>
+                    <li><a href="arraiais.html">Arraiais</a></li>
+                    <li><a href="levadas.html">Levadas</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h4 class="footer-section-title">Conta</h4>
+                <ul class="footer-links">
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="registar.html">Registar</a></li>
+                    <li><a href="dados-pessoais-login.html">Minha Conta</a></li>
+                </ul>
+            </div>
+            
+        </div>
+        
+        <hr class="footer-divider">
+        
+        <p class="footer-copyright">© 2024 Madeira Tours. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
+

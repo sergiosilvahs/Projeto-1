@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300">
+  <!-- Céu -->
+  <rect width="400" height="120" fill="#87CEEB"/>
+  
+  <!-- Oceano -->
+  <rect y="120" width="400" height="180" fill="#1E90FF"/>
+  
+  <!-- Ondas -->
+  <path d="M 0,150 Q 50,145 100,150 T 200,150 T 300,150 T 400,150 L 400,300 L 0,300 Z" fill="#00BFFF" opacity="0.5"/>
+  
+  <!-- Praia de areia negra -->
+  <rect y="120" width="400" height="60" fill="#2F2F2F"/>
+  <rect y="120" width="400" height="60" fill="#1C1C1C" opacity="0.7"/>
+  
+  <!-- Textura da areia -->
+  <circle cx="50" cy="140" r="2" fill="#3F3F3F" opacity="0.5"/>
+  <circle cx="120" cy="150" r="2" fill="#3F3F3F" opacity="0.5"/>
+  <circle cx="200" cy="145" r="2" fill="#3F3F3F" opacity="0.5"/>
+  <circle cx="280" cy="155" r="2" fill="#3F3F3F" opacity="0.5"/>
+  <circle cx="350" cy="140" r="2" fill="#3F3F3F" opacity="0.5"/>
+  
+  <!-- Rocha vulcânica à direita -->
+  <polygon points="300,180 350,150 400,160 400,300 300,300" fill="#2F4F4F"/>
+  <polygon points="300,180 350,150 400,160 400,300 300,300" fill="#1C1C1C" opacity="0.6"/>
+  
+  <!-- Piscina natural -->
+  <ellipse cx="320" cy="200" rx="50" ry="40" fill="#00CED1" opacity="0.9"/>
+  <ellipse cx="320" cy="200" rx="45" ry="35" fill="#E0F6FF" opacity="0.7"/>
+  <ellipse cx="320" cy="200" rx="50" ry="40" fill="none" stroke="#2F4F4F" stroke-width="2"/>
+  
+  <!-- Vegetação nas rochas -->
+  <circle cx="340" cy="170" r="8" fill="#228B22"/>
+  <circle cx="360" cy="175" r="6" fill="#228B22"/>
+  
+  <!-- Pessoas na praia (silhuetas) -->
+  <circle cx="150" cy="145" r="6" fill="#FFD700"/>
+  <rect x="147" y="148" width="6" height="8" fill="#FFD700"/>
+  
+  <circle cx="220" cy="148" r="6" fill="#FF69B4"/>
+  <rect x="217" y="151" width="6" height="8" fill="#FF69B4"/>
+</svg>
+
+
